@@ -1,12 +1,13 @@
 import React from "react";
 
 const LikePostHoc =(props)=>{
-    let {count, increaseCount} = props;
+    let {count, incrementCount} = props;
     return (
         <>
-        <button onClick={increaseCount}>Like Post Hoc {count}</button>
+        <button onClick={incrementCount}>Like Post Hoc {count}</button>
         </>
     )
 }
 
 export default LikePostHoc;
+

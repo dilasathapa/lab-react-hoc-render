@@ -1,10 +1,10 @@
 import React from "react";
 
-const LikeImageRender = (props) => {
+function LikeImageRender(props){
+    let {count, incrementCount} = props;
     return (
         <>
-            <div>
-                <button onClick={props.increaseCount}>Like Image Render  {props.count}  </button></div>
+            <button onClick={incrementCount}>Like Image {count}</button>
         </>
     )
 }

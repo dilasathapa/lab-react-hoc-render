@@ -1,10 +1,10 @@
 import React from "react";
 
 const LikeImageHoc =(props)=>{
-    let {count, increaseCount} = props;
+    let {count, incrementCount} = props;
     return (
         <>
-        <button onClick={increaseCount} >Like Image Hoc {count}</button>
+        <button onClick={incrementCount} >Like Image Hoc {count}</button>
         </>
     )
 }

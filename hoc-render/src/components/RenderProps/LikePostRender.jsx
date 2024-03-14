@@ -1,11 +1,9 @@
 import React from "react";
 
-const LikePostRender = (props) => {
+function LikePostRender(props){
     return (
         <>
-            <div>
-                <button onClick={props.increaseCount}>Like Post Render {props.count}</button>
-            </div>
+            <button onClick={props.incrementCount}>Like Post {props.count}</button>
         </>
     )
 }

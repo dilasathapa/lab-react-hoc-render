@@ -1,17 +1,17 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 
-const RenderPropsComponent =(props)=>{
-    let [count, setCount] = useState(0)
+function RenderPropsComponent(props){
 
-    const increaseCount =()=>{
+    const [count, setCount] = useState(0);
+
+    function incrementCount(){
         setCount(count+1)
     }
     return (
         <>
-          {props.render(count, increaseCount)}
+            {props.render(count, incrementCount)}
         </>
     )
 }
 
-export default RenderPropsComponent;
+export default RenderPropsComponent
